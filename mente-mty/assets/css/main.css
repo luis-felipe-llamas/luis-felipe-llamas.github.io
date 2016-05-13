@@ -2262,7 +2262,7 @@
 			.features section {
 				padding: 2.5em 1.5em 0.1em 5.5em ;
 			}
-
+		
 				.features section .icon {
 					left: 1.5em;
 					top: 2em;
@@ -2275,7 +2275,7 @@
 			.features section {
 				padding: 2em 1.5em 0.1em 1.5em ;
 			}
-
+			
 				.features section .icon {
 					left: 0;
 					position: relative;
@@ -2585,6 +2585,56 @@
 				.wrapper.style3-alt .icon.major:before {
 					color: #953d75;
 				}
+
+/* Gallery */
+
+	.gallery-images {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		border-radius: 0.25em;
+		margin: 0 0 2em 0;
+	}
+
+		.gallery-images section {
+			padding: 10px;
+			position: relative;
+			width: 25%;
+		}
+
+			.gallery-images section img {
+				width: 100%;
+			}
+
+	.image-gallery {
+		border-radius: 0.25em;
+		border: 0;
+		display: inline-block;
+		position: relative;
+		float: left;
+	}
+
+
+		@media screen and (max-width: 980px) {
+
+			.gallery-images section {
+				width: 33%;
+			}
+
+		}
+
+		@media screen and (max-width: 735px) {
+
+			.gallery-images section {
+				width: 50%;
+			}
+
+		}
 
 /* Image */
 

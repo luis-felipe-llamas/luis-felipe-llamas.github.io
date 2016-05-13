@@ -36,8 +36,8 @@
 
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div><a href="#" class="image"><img src="images/mente-logo.png" alt="" data-position="center center" width="100%" /></a></div>
 						<div class="inner">
-							<h1><a href="#" class="image"><img src="images/mente-logo.png" alt="" data-position="center center" /></a></h1>
 							<p> El programa MenTe en Acción México tiene como objetivo principal ser guía e impulsor de mujeres jóvenes que aún se encuentran realizando sus estudios básicos. Esto con la finalidad de sembrar el deseo de continuar con una carrera profesional dentro del área de Ciencia y Tecnología. Logrando así atacar dos factores sociales relevantes: <strong>la escasez del género femenino en el área de Ciencia y Tecnología</strong> y <strong>la falta de recursos económicos</strong> para continuar sus estudios.</p>
 							<ul class="actions">
 								<li><a href="#whoWeAre" class="button scrolly">Ver más</a></li>
@@ -48,7 +48,7 @@
 				<!-- Who We Are -->
 					<section id="whoWeAre" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/historia.jpg" alt="" data-position="center center" /></a>
+							<a href="#" class="image"><img src="images/historia.jpg" alt="" data-position="50% 10%" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Historia</h2>
@@ -131,10 +131,7 @@
 					<section id="gallery" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h2>Galería</h2>
-							<div id="instafeed"></div>
-							<ul class="actions">
-								<li><a href="https://www.instagram.com/ideasenaccion/" class="button scrolly">Ver más</a></li>
-							</ul>
+							<div id="instafeed" class="gallery-images"></div>
 						</div>
 					</section>
 
@@ -212,10 +209,12 @@
 
 			      // run instafeed
 			      demoFeed = new Instafeed({
-			        limit: 32,
+			        limit: 12,
 			        get: 'tagged',
-			        tagName: 'women',
-			        clientId: '467ede5a6b9b48ae8e03f4e2582aeeb3'
+			        tagName: 'empowerment',
+					clientId: '467ede5a6b9b48ae8e03f4e2582aeeb3',
+					resolution: 'low_resolution',
+					template: '<section class="image-gallery"><img src="{{image}}"/></section>'
 			      }).run();
 
 			      // show the user their token and hash
