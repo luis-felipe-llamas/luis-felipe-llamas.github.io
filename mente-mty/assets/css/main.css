@@ -2602,7 +2602,7 @@
 	}
 
 		.gallery-images section {
-			padding: 10px;
+			padding: 0px 10px;
 			position: relative;
 			width: 25%;
 		}
